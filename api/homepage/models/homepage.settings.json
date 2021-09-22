@@ -18,8 +18,8 @@
     "descripcion": {
       "type": "richtext"
     },
-    "Imagen": {
-      "collection": "file",
+    "Portada": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
