@@ -8,5 +8,10 @@ module.exports = ({ env }) => ({
         api_secret: env('CLOUDINARY_SECRET'),
       },
     },
+    
+    actionOptions: {
+      upload: {},
+      delete: {},
+    },
     // ...
   });
