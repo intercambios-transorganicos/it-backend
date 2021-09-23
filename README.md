@@ -1,3 +1,1 @@
-# Strapi application
-
-A quick description of your strapi application
+commands : git push heroku HEAD:main
