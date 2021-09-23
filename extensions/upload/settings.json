@@ -1,0 +1,8 @@
+{
+    "provider": "cloudinary",
+    "providerOptions": {
+      "cloud_name": "intercambios-transorganicos",
+      "api_key": "581878872335938",
+      "api_secret": "PpRU_exF9yzvRUHbjhHippHcpiI"
+    }
+  }
