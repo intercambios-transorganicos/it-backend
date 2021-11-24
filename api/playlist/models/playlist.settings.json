@@ -1,9 +1,8 @@
 {
-  "kind": "singleType",
-  "collectionName": "background_videos",
+  "kind": "collectionType",
+  "collectionName": "playlists",
   "info": {
-    "name": "background-video",
-    "description": ""
+    "name": "playlist"
   },
   "options": {
     "increments": true,
@@ -12,7 +11,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Teaser": {
+    "nombre": {
+      "type": "string"
+    },
+    "videos": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -23,9 +25,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "titulo": {
-      "type": "string"
     }
   }
 }
