@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "actividades",
+  "info": {
+    "name": "actividades"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "lugar": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "imagenes": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "videos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
