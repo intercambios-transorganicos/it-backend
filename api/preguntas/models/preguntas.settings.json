@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "preguntas",
+  "info": {
+    "name": "preguntas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pregunta": {
+      "type": "text"
+    }
+  }
+}
