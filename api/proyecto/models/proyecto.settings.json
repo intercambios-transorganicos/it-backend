@@ -47,17 +47,9 @@
       "required": false,
       "pluginOptions": {}
     },
-    "videos": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+    "oembed": {
+      "type": "oembed",
+      "columnType": "longtext"
     }
   }
 }
