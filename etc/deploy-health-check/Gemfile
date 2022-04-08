@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'rake'
+gem 'rspec'
+gem 'kramdown'
+gem 'serverspec'
+gem 'rbnacl'
+gem 'ed25519'
+gem 'bcrypt_pbkdf'
+gem 'rbnacl-libsodium'
