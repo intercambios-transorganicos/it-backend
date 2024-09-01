@@ -47,6 +47,9 @@
       "required": false,
       "pluginOptions": {}
     },
+    "documents": {
+      "collection": "documents"
+    },
     "oembed": {
       "type": "oembed",
       "columnType": "longtext"

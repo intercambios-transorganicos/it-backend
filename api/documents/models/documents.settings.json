@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "articulos",
+  "collectionName": "documents",
   "info": {
-    "name": "Articulos",
+    "name": "Documents",
     "description": ""
   },
   "options": {
@@ -12,20 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Autor": {
+    "categoria": {
       "type": "string"
     },
-    "Titulo": {
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
       "type": "text"
     },
-    "Subtitulo": {
-      "type": "string"
-    },
-    "Contenido": {
-      "type": "richtext"
-    },
-    "imagenes": {
-      "collection": "file",
+    "archivo": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -35,13 +32,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "documents": {
-      "collection": "documents"
-    },
-    "oembed": {
-      "type": "oembed",
-      "columnType": "longtext"
     }
   }
 }
