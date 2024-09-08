@@ -52,7 +52,7 @@
     },
     "oembed": {
       "type": "oembed",
-      "columnType": "longtext"
+      "columnType": "text"
     }
   }
 }
