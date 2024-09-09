@@ -1,6 +1,8 @@
 require('dotenv').config()
-const fs = require('fs');
-const path = require('path');
+const { Buffer } = require('buffer');
+
+const certificateBuffer = Buffer.from(process.env.CERTIFICATEBASE64, 'base64');
+
 module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
@@ -14,7 +16,7 @@ module.exports = ({ env }) => ({
         username: env('DATABASE_USERNAME', process.env.DATABASE_USERNAME),
         password: env('DATABASE_PASSWORD', process.env.DATABASE_PASSWORD),
         ssl: {
-          ca: fs.readFileSync(path.join(__dirname, '../ca.pem')).toString()
+          ca: certificateBuffer.toString()
         },
       },
       options: {
