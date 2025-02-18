@@ -23,6 +23,9 @@
     "contenido": {
       "type": "text"
     },
+    "orden": {
+      "type": "integer"
+    },
     "portada": {
       "collection": "file",
       "via": "related",
