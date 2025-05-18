@@ -54,8 +54,11 @@
       "collection": "documents"
     },
     "oembeds": {
-    "type": "json",
-    "default": []
+      "type": "json",
+      "default": []
+    },
+    "links": {
+      "type": "json"
     }
   }
 }
